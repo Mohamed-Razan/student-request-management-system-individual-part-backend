@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.impl;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.entity.FACMember;
+import com.example.demo.entity.FacMember;
 import com.example.demo.entity.SubCommitee;
 import com.example.demo.repository.SubCommiteeRepository;
 
@@ -23,7 +23,7 @@ public class SubCommiteeService {
 	public SubCommitee postSubCommitee(String purpose, String discripition1, int leaderId, int facMemberId[]) {
 		Date appointedDate = new Date();
 		
-		List<FACMember> facMember = new ArrayList<>();
+		List<FacMember> facMember = new ArrayList<>();
 		
 		for(int i = 0; i < facMemberId.length; i++) {
 			facMember.add(facMemberService.getFACMember(facMemberId[i]));

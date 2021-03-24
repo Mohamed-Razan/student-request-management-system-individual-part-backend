@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.AssistentRegistrar;
-import com.example.demo.service.AssistentRegistrarService;
+import com.example.demo.entity.AssistantRegistrar;
+import com.example.demo.service.impl.AssistentRegistrarService;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -17,7 +17,7 @@ public class AssistentRegistrarController {
 	private AssistentRegistrarService service;
 	
 	@PostMapping("/regassistentregistrar")
-	public AssistentRegistrar postAssistentRegistrar(@RequestBody AssistentRegistrar assistentRegistrar) {
+	public AssistantRegistrar postAssistentRegistrar(@RequestBody AssistantRegistrar assistentRegistrar) {
 		return service.postAssistentRegistrar(assistentRegistrar);
 	}
 }

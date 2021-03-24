@@ -14,7 +14,6 @@ import javax.persistence.TemporalType;
 
 import lombok.Data;
 
-@Data
 @Entity
 @Table
 public class Memo {
@@ -29,13 +28,13 @@ public class Memo {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn
-	private FACMember facMember;
+	private FacMember facMember;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	private FACMeeting facMeeting; 
 	
 
-	public Memo(String description1, String annexPath, Date enteredDate, FACMember facMember, String decision) {
+	public Memo(String description1, String annexPath, Date enteredDate, FacMember facMember, String decision) {
 		super();
 		this.description1 = description1;
 		this.annexPath = annexPath;
@@ -80,11 +79,11 @@ public class Memo {
 		this.enteredDate = enteredDate;
 	}
 
-	public FACMember getFacMember() {
+	public FacMember getFacMember() {
 		return facMember;
 	}
 
-	public void setFacMember(FACMember facMember) {
+	public void setFacMember(FacMember facMember) {
 		this.facMember = facMember;
 	}
 

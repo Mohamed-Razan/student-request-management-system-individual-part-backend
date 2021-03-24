@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.example.demo.entity.LateChanges;
 import com.example.demo.entity.LateModuleChangeRequest;
 import com.example.demo.entity.LeaveRequest;
-import com.example.demo.service.LateModuleChangeRequestService;
+import com.example.demo.service.impl.LateModuleChangeRequestService;
 
 @RestController
 @CrossOrigin(origins = "*")

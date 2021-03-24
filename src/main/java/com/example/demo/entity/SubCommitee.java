@@ -33,7 +33,7 @@ public class SubCommitee {
 	private FACMeeting reportSubmittedFacMeeting;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
-	private FACMember leader;
+	private FacMember leader;
 	
 	@ManyToMany()
 	@JoinTable(
@@ -41,9 +41,9 @@ public class SubCommitee {
 			joinColumns = @JoinColumn(),
 			inverseJoinColumns = @JoinColumn()
 			)
-	private List<FACMember> facmember;
+	private List<FacMember> facmember;
 	
-	public SubCommitee(String purpose, String discripition1, Date appointedDate, FACMember leader, List<FACMember> facmember) {
+	public SubCommitee(String purpose, String discripition1, Date appointedDate, FacMember leader, List<FacMember> facmember) {
 		super();
 		this.purpose = purpose;
 		this.discripition1 = discripition1;
@@ -120,19 +120,19 @@ public class SubCommitee {
 		this.reportSubmittedFacMeeting = reportSubmittedFacMeeting;
 	}
 
-	public FACMember getLeader() {
+	public FacMember getLeader() {
 		return leader;
 	}
 
-	public void setLeader(FACMember leader) {
+	public void setLeader(FacMember leader) {
 		this.leader = leader;
 	}
 
-	public List<FACMember> getFacmember() {
+	public List<FacMember> getFacmember() {
 		return facmember;
 	}
 
-	public void setFacmember(List<FACMember> facmember) {
+	public void setFacmember(List<FacMember> facmember) {
 		this.facmember = facmember;
 	}
 	

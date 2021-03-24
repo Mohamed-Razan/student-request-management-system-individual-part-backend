@@ -5,18 +5,25 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
+import lombok.Data;
+@Data
 @Embeddable
 public class CommentKey implements Serializable {
 
+	/**
+	 * Added Default serializable value by shaja Nasir
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Column(name = "FAC_Id")
-	private int FACId;
+	private Long FACId;
 	
 	@Column(name = "rid")
 	private int rid;
 
-	public CommentKey(int fACId, int rid) {
+	public CommentKey(long facId2, int rid) {
 		super();
-		FACId = fACId;
+		FACId = facId2;
 		this.rid = rid;
 	}
 
@@ -24,27 +31,13 @@ public class CommentKey implements Serializable {
 		super();
 	}
 
-	public int getFACId() {
-		return FACId;
-	}
-
-	public void setFACId(int fACId) {
-		FACId = fACId;
-	}
-
-	public int getRid() {
-		return rid;
-	}
-
-	public void setRid(int rid) {
-		this.rid = rid;
-	}
+	
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + FACId;
+		result = (int) (prime * result + FACId);
 		result = prime * result + rid;
 		return result;
 	}

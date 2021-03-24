@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.SubCommitee;
-import com.example.demo.service.SubCommiteeService;
+import com.example.demo.service.impl.SubCommiteeService;
 
 @RestController
 public class SubCommiteeController {

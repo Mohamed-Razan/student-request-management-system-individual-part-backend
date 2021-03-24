@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.FACMember;
-import com.example.demo.service.FACMemberService;
+import com.example.demo.entity.FacMember;
+import com.example.demo.service.impl.FACMemberService;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -19,12 +19,12 @@ public class FACMemberController {
 	private FACMemberService service;
 	
 	@PostMapping("/regfacmember")
-	public FACMember postFACMember(@RequestBody FACMember facMember) {
+	public FacMember postFACMember(@RequestBody FacMember facMember) {
 		return service.postFACMember(facMember);
 	}
 	
 	@GetMapping("facmember/{facId}")
-	public FACMember FACMember(@PathVariable int facId) {
+	public FacMember FACMember(@PathVariable int facId) {
 		return service.getFACMember(facId);
 	}
 }

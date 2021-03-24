@@ -2,8 +2,8 @@ package com.example.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.demo.entity.AssistentRegistrar;
+import com.example.demo.entity.AssistantRegistrar;
 
-public interface AssistentRegistrarRepository extends JpaRepository<AssistentRegistrar, Integer> {
+public interface AssistentRegistrarRepository extends JpaRepository<AssistantRegistrar, Integer> {
  
 }

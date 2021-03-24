@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.entity.Memo;
-import com.example.demo.service.MemoService;
+import com.example.demo.service.impl.MemoService;
 
 @RestController
 @CrossOrigin(origins = "*")
