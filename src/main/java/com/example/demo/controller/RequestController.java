@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Request;
-import com.example.demo.service.RequestService;
+import com.example.demo.service.impl.RequestService;
 
 @RestController
 public class RequestController {

@@ -10,12 +10,11 @@ import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
+import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;
-
 @Entity
 @Table
 @PrimaryKeyJoinColumn
-@SuperBuilder
 public class AlternativeModuleRequest extends Request {
 
 	private String comment;

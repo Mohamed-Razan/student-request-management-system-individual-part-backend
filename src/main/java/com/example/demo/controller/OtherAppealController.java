@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.entity.OtherAppeal;
-import com.example.demo.service.OtherAppealService;
+import com.example.demo.service.impl.OtherAppealService;
 
 
 @RestController

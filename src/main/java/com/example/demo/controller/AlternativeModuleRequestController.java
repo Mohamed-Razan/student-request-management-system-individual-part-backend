@@ -17,7 +17,7 @@ import com.example.demo.entity.LeaveRequest;
 import com.example.demo.entity.ModuleDiscontinue;
 import com.example.demo.entity.ModuleDiscontinueKey;
 import com.example.demo.entity.OtherAppeal;
-import com.example.demo.service.AlternativeModuleRequestService;
+import com.example.demo.service.impl.AlternativeModuleRequestService;
 
 
 

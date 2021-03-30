@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.entity.LeaveRequest;
-import com.example.demo.service.LeaveRequestService;
+import com.example.demo.service.impl.LeaveRequestService;
 
 @RestController
 @CrossOrigin(origins = "*")

@@ -18,7 +18,7 @@ public class Comment {
     @ManyToOne
     @MapsId("FACId")
     @JoinColumn(name = "FAC_Id")
-    private FACMember facMember;
+    private FacMember facMember;
 
     @ManyToOne
     @MapsId("rid")
@@ -30,7 +30,7 @@ public class Comment {
     private Date enteredDate = new Date();
     private String discription1;
     
-	public Comment(FACMember facMember, Request request, boolean isForwarded, boolean isRecommended,
+	public Comment(FacMember facMember, Request request, boolean isForwarded, boolean isRecommended,
 			Date enteredDate, String discription1) {
 		super();
 		this.id = new CommentKey(facMember.getUserId(), request.getRid());

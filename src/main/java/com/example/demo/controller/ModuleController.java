@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Module1;
-import com.example.demo.service.ModuleService;
+import com.example.demo.service.impl.ModuleService;
 
 
 @RestController

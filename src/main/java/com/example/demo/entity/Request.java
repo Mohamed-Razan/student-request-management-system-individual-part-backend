@@ -21,7 +21,6 @@ import lombok.experimental.SuperBuilder;
 @Entity
 @Table
 @Inheritance(strategy = InheritanceType.JOINED)
-@SuperBuilder
 public class Request {
 
 	@Id
@@ -56,7 +55,6 @@ public class Request {
 	}
 
 	public Request() {
-		super();
 	}
 
 	public int getRid() {
@@ -131,7 +129,4 @@ public class Request {
 		this.facMeeting1 = facMeeting1;
 	}
 	
-	
-	
-
 }

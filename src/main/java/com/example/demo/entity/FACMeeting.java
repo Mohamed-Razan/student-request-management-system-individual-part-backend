@@ -20,6 +20,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.sun.istack.NotNull;
 
+import lombok.Data;
+@Data
 @Entity
 @Table
 public class FACMeeting {
@@ -45,7 +47,7 @@ public class FACMeeting {
 	private List<Attend> attends;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
-	private AssistentRegistrar assistantRegistrar;
+	private AssistantRegistrar assistantRegistrar;
 	
 	private boolean assRegAttend;
 	private String assRegApology;
@@ -67,69 +69,69 @@ public class FACMeeting {
 		super();
 	}
 
-	public int getMid() {
-		return mid;
-	}
-
-	public void setMid(int mid) {
-		this.mid = mid;
-	}
-
-	public Date getMeetingDate() {
-		return meetingDate;
-	}
-
-	public void setMeetingDate(Date meetingDate) {
-		this.meetingDate = meetingDate;
-	}
-
-	public Date getMeetingTime() {
-		return meetingTime;
-	}
-
-	public void setMeetingTime(Date meetingTime) {
-		this.meetingTime = meetingTime;
-	}
-
-	public String getLocation() {
-		return location;
-	}
-
-	public void setLocation(String location) {
-		this.location = location;
-	}
-
-	public List<Attend> getAttends() {
-		return attends;
-	}
-
-	public void setAttends(List<Attend> attends) {
-		this.attends = attends;
-	}
-
-	public AssistentRegistrar getAssistantRegistrar() {
-		return assistantRegistrar;
-	}
-
-	public void setAssistantRegistrar(AssistentRegistrar assistantRegistrar) {
-		this.assistantRegistrar = assistantRegistrar;
-	}
-
-	public boolean isAssRegAttend() {
-		return assRegAttend;
-	}
-
-	public void setAssRegAttend(boolean assRegAttend) {
-		this.assRegAttend = assRegAttend;
-	}
-
-	public String getAssRegApology() {
-		return assRegApology;
-	}
-
-	public void setAssRegApology(String assRegApology) {
-		this.assRegApology = assRegApology;
-	}
-	
-	
+//	public int getMid() {
+//		return mid;
+//	}
+//
+//	public void setMid(int mid) {
+//		this.mid = mid;
+//	}
+//
+//	public Date getMeetingDate() {
+//		return meetingDate;
+//	}
+//
+//	public void setMeetingDate(Date meetingDate) {
+//		this.meetingDate = meetingDate;
+//	}
+//
+//	public Date getMeetingTime() {
+//		return meetingTime;
+//	}
+//
+//	public void setMeetingTime(Date meetingTime) {
+//		this.meetingTime = meetingTime;
+//	}
+//
+//	public String getLocation() {
+//		return location;
+//	}
+//
+//	public void setLocation(String location) {
+//		this.location = location;
+//	}
+//
+//	public List<Attend> getAttends() {
+//		return attends;
+//	}
+//
+//	public void setAttends(List<Attend> attends) {
+//		this.attends = attends;
+//	}
+//
+//	public AssistentRegistrar getAssistantRegistrar() {
+//		return assistantRegistrar;
+//	}
+//
+//	public void setAssistantRegistrar(AssistentRegistrar assistantRegistrar) {
+//		this.assistantRegistrar = assistantRegistrar;
+//	}
+//
+//	public boolean isAssRegAttend() {
+//		return assRegAttend;
+//	}
+//
+//	public void setAssRegAttend(boolean assRegAttend) {
+//		this.assRegAttend = assRegAttend;
+//	}
+//
+//	public String getAssRegApology() {
+//		return assRegApology;
+//	}
+//
+//	public void setAssRegApology(String assRegApology) {
+//		this.assRegApology = assRegApology;
+//	}
+//	
+//	
 }

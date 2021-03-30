@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.FACMeeting;
-import com.example.demo.service.FACMeetingService;
+import com.example.demo.service.impl.FACMeetingService;
 
 @RestController
 @CrossOrigin(origins = "*")

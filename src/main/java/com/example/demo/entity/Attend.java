@@ -15,7 +15,7 @@ public class Attend {
 	@ManyToOne
     @MapsId("facMemberId")
     @JoinColumn(name = "fac_member_id")
-    private FACMember facMember;
+    private FacMember facMember;
 
     @ManyToOne
     @MapsId("facMeetingId")
@@ -25,7 +25,7 @@ public class Attend {
     private boolean attendence;
     private String apology;
     
-	public Attend(FACMember facMember, FACMeeting facMeeting, boolean attendence, String apology) {
+	public Attend(FacMember facMember, FACMeeting facMeeting, boolean attendence, String apology) {
 		super();
 		Id = new AttendKey(facMember.getUserId(), facMeeting.getMid());
 		this.facMember = facMember;
